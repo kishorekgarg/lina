@@ -56,7 +56,7 @@ class Vector(object):
             raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
 
     def scalar(self, scalar):
-        self.coordinates = tuple(list(scalar * x for x in self.coordinates))
+        return Vector(list(scalar * x for x in self.coordinates))
 
     def normalized(self):
         try:
@@ -97,6 +97,8 @@ class Vector(object):
         except ValueError:
             raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
 
+    # Threshold is being used here to remove false negative
+    # which will be encountered because of approx zero values of vectors
     def is_zero_vector(self, threshold=1e-10):
         return self.magnitude() < threshold
 
@@ -107,4 +109,32 @@ class Vector(object):
             return fabs(self.dot_product(other)) < threshold
         except ValueError:
             raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
+
+    def projection(self, other):
+        try:
+            if self.dimension != other.dimension:
+                raise ValueError
+            return self.dot_product(other.normalized())
+        except ValueError:
+            raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
+
+    def projection_parallel_component(self, other):
+        try:
+            other_normalized = other.normalized()
+            return other_normalized.scalar(self.projection(other))
+        except Exception as e:
+            if str(e) == message.ZERO_VECTOR_CAN_NOT_BE_NORMALIZED:
+                raise Exception(message.NO_UNIQUE_PARALLEL_COMPONENT_OF_PROJECTION)
+            else:
+                raise e
+
+    def projection_orthogonal_component(self, other):
+        try:
+            return self - self.projection_parallel_component(other)
+        except Exception as e:
+            if str(e) == message.NO_UNIQUE_PARALLEL_COMPONENT_OF_PROJECTION:
+                raise Exception(message.NO_UNIQUE_ORTHOGONAL_COMPONENT_OF_PROJECTION)
+            else:
+                raise e
+
 

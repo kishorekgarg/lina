@@ -68,5 +68,19 @@ def main():
     vector25 = Vector([0, 0])
     print vector24.is_parallel(vector25)
     print vector24.is_orthogonal(vector25)
+
+    # Projection
+    vector26 = Vector([3.039, 1.879])
+    vector27 = Vector([0.825, 2.036])
+    print vector26.projection_parallel_component(vector27)
+
+    vector28 = Vector([-9.88, -3.264, -8.159])
+    vector29 = Vector([-2.155, -9.353, -9.473])
+    print vector28.projection_orthogonal_component(vector29)
+
+    vector30 = Vector([3.009, -6.172, 3.692, -2.51])
+    vector31 = Vector([6.404, -9.144, 2.759, 8.718])
+    print vector30.projection_parallel_component(vector31)
+    print vector30.projection_orthogonal_component(vector31)
 if __name__ == '__main__':
     main()
