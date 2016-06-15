@@ -41,12 +41,32 @@ def main():
     # Angle in radian
     vector14 = Vector([3.183, -7.627])
     vector15 = Vector([-2.668, 5.319])
-    print vector14.get_angle_in_radian(vector15)
+    print vector14.angle_in_radian(vector15)
 
     # Angle in degree
     vector16 = Vector([7.35, 0.221, 5.188])
     vector17 = Vector([2.751, 8.259, 3.985])
-    print vector16.get_angle_in_degree(vector17)
+    print vector16.angle_in_degree(vector17)
 
+    # Parallel and orthogonal vectors
+    vector18 = Vector([-7.579, -7.88])
+    vector19 = Vector([22.737, 23.64])
+    print vector18.is_parallel(vector19)
+    print vector18.is_orthogonal(vector19)
+
+    vector20 = Vector([-2.029, 9.97, 4.172])
+    vector21 = Vector([-9.231, -6.639, -7.245])
+    print vector20.is_parallel(vector21)
+    print vector20.is_orthogonal(vector21)
+
+    vector22 = Vector([-2.328, -7.284, -1.214])
+    vector23 = Vector([-1.821, 1.072, -2.94])
+    print vector22.is_parallel(vector23)
+    print vector22.is_orthogonal(vector23)
+
+    vector24 = Vector([2.118, 4.827])
+    vector25 = Vector([0, 0])
+    print vector24.is_parallel(vector25)
+    print vector24.is_orthogonal(vector25)
 if __name__ == '__main__':
     main()

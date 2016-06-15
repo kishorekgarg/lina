@@ -1,5 +1,5 @@
 import itertools
-from math import (sqrt, acos, pi)
+from math import (sqrt, acos, pi, fabs)
 import message
 
 
@@ -73,7 +73,7 @@ class Vector(object):
         except ValueError:
             raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
 
-    def get_angle_in_radian(self, other):
+    def angle_in_radian(self, other):
         try:
             v = self.normalized()
             w = other.normalized()
@@ -84,6 +84,27 @@ class Vector(object):
             else:
                 raise e
 
-    def get_angle_in_degree(self, other):
+    def angle_in_degree(self, other):
         degree_per_radian = 180./pi
-        return self.get_angle_in_radian(other) * degree_per_radian
+        return self.angle_in_radian(other) * degree_per_radian
+
+    def is_parallel(self, other):
+        try:
+            if self.dimension != other.dimension:
+                raise ValueError
+            return self.is_zero_vector() or other.is_zero_vector() or self.angle_in_radian(other) == 0 or \
+                   self.angle_in_radian(other) == pi
+        except ValueError:
+            raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
+
+    def is_zero_vector(self, threshold=1e-10):
+        return self.magnitude() < threshold
+
+    def is_orthogonal(self, other, threshold=1e-10):
+        try:
+            if self.dimension != other.dimension:
+                raise ValueError
+            return fabs(self.dot_product(other)) < threshold
+        except ValueError:
+            raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
+
