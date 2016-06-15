@@ -1,4 +1,4 @@
-from lina.lina.vector import Vector
+from lina.vector import Vector
 
 
 def main():
