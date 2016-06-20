@@ -137,4 +137,31 @@ class Vector(object):
             else:
                 raise e
 
+    def cross_product(self, other):
+        try:
+            if self.dimension != other.dimension:
+                raise ValueError
+            x1, y1, z1 = self.coordinates
+            x2, y2, z2 = other.coordinates
+            return Vector([(y1 * z2 - y2*z1), (x2 * z1 - x1 * z2), (x1 * y2 - x2 * y1)])
+        except ValueError as e:
+            msg = str(e)
+            if msg == 'need more than 2 values to unpack':
+                self_3d_embedded = Vector(self.coordinates + ('0',))
+                other_3d_embedded = Vector(other.coordinates + ('0',))
+                return self_3d_embedded.cross_product(other_3d_embedded)
+            elif msg == 'too many values to unpack' or msg == 'need more than 1 value to unpack':
+                raise Exception(message.ONLY_ALLOWED_FOR_TWO_THREE_DIM_VECTOR)
+            else:
+                raise e
+
+    def parallelogram_area(self, other):
+        if self.dimension != other.dimension:
+            raise ValueError
+        cross_product_vector = self.cross_product(other)
+        return cross_product_vector.magnitude()
+
+    def triangle_area(self, other):
+        return self.parallelogram_area(other)/2.0
+
 

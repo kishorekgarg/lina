@@ -82,5 +82,17 @@ def main():
     vector31 = Vector([6.404, -9.144, 2.759, 8.718])
     print vector30.projection_parallel_component(vector31)
     print vector30.projection_orthogonal_component(vector31)
+
+    vector32 = Vector([8.462, 7.893, -8.187])
+    vector33 = Vector([6.984, -5.975, 4.778])
+    print vector32.cross_product(vector33)
+
+    vector34 = Vector([-8.987, -9.838, 5.031])
+    vector35 = Vector([-4.268, -1.861, -8.866])
+    print vector34.parallelogram_area(vector35)
+
+    vector36 = Vector([1.5, 9.547, 3.691])
+    vector37 = Vector([-6.007, 0.124, 5.772])
+    print vector36.triangle_area(vector37)
 if __name__ == '__main__':
     main()
