@@ -1,4 +1,5 @@
 from lina.vector import Vector
+from lina.line import Line
 
 
 def main():
@@ -94,5 +95,17 @@ def main():
     vector36 = Vector([1.5, 9.547, 3.691])
     vector37 = Vector([-6.007, 0.124, 5.772])
     print vector36.triangle_area(vector37)
+
+
+def line_main():
+    line1 = Line(normal_vector=Vector([4.046, 2.836]), constant_term=1.21)
+    line2 = Line(normal_vector=Vector([10.115, 7.09]), constant_term=3.025)
+    print line1.intersection_point(line2)
+    line3 = Line(Vector([7.204, 3.1882]), 8.68)
+    line4 = Line(Vector([8.172, 4.114]), 9.883)
+    print line3.intersection_point(line4)
+    line5 = Line(Vector([1.182, 5.562]), 6.744)
+    line6 = Line(Vector([1.773, 8.343]), 9.525)
+    print line5.intersection_point(line6)
 if __name__ == '__main__':
-    main()
+    line_main()

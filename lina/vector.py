@@ -23,6 +23,9 @@ class Vector(object):
     def __eq__(self, v):
         return self.coordinates == v.coordinates
 
+    def __iter__(self):
+        return iter(self.coordinates)
+
     def magnitude(self):
         try:
             if not self.coordinates:
@@ -43,7 +46,7 @@ class Vector(object):
         try:
             if self.dimension != other.dimension:
                 raise ValueError
-            return Vector(list(x - y for x, y in itertools.izip(self.coordinates, other.coordinates)))
+            return Vector(list(float(x) - float(y) for x, y in itertools.izip(self.coordinates, other.coordinates)))
         except ValueError:
             raise ValueError(message.VECTORS_NOT_OF_SAME_DIMENSIONS)
 
@@ -77,7 +80,7 @@ class Vector(object):
         try:
             v = self.normalized()
             w = other.normalized()
-            return acos(v.dot_product(w))
+            return acos(round(v.dot_product(w), 6))
         except Exception as e:
             if str(e) == message.ZERO_VECTOR_CAN_NOT_BE_NORMALIZED:
                 raise Exception(message.ZERO_VECTOR_CAN_NOT_BE_NORMALIZED)
