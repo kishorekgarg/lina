@@ -1,5 +1,6 @@
 from lina.vector import Vector
 from lina.line import Line
+from lina.plane import Plane
 
 
 def main():
@@ -107,5 +108,22 @@ def line_main():
     line5 = Line(Vector([1.182, 5.562]), 6.744)
     line6 = Line(Vector([1.773, 8.343]), 9.525)
     print line5.intersection_point(line6)
+
+
+def plane_main():
+    plane1 = Plane(normal_vector=Vector([-0.412, 3.806, 0.728]), constant_term=-3.46)
+    plane2 = Plane(normal_vector=Vector([1.03, -9.515, -1.82]), constant_term=8.65)
+    print plane1.is_parallel(plane2)
+    print plane1 == plane2
+    plane3 = Plane(Vector([2.611, 5.528, 0.283]), 4.6)
+    plane4 = Plane(Vector([7.715, 8.306, 5.342]), 3.76)
+    print plane3.is_parallel(plane4)
+    print plane3 == plane4
+    plane5 = Plane(Vector([-7.926, 8.625, -7.212]), -7.95)
+    plane6 = Plane(Vector([-2.642, 2.875, -2.404]), 2.44)
+    print plane5.is_parallel(plane6)
+    print plane5 == plane6
+
+
 if __name__ == '__main__':
-    line_main()
+    plane_main()
