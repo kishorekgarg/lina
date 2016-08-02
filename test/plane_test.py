@@ -1,6 +1,5 @@
 import unittest
 from lina.vector import Vector
-from lina.line import Line
 from lina.plane import Plane
 
 

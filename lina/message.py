@@ -6,3 +6,6 @@ NO_UNIQUE_PARALLEL_COMPONENT_OF_PROJECTION = 'No unique parallel component of pr
 NO_UNIQUE_ORTHOGONAL_COMPONENT_OF_PROJECTION = 'No unique orthogonal component of projection'
 ONLY_ALLOWED_FOR_TWO_THREE_DIM_VECTOR = 'Only allowed for two/three dimension vectors'
 NO_NONZERO_ELEMENTS_FOUND = 'No non-zero elements found'
+ALL_PLANES_MUST_BE_IN_SAME_DIM_MSG = 'All planes in the system should live in the same dimension'
+NO_SOLUTIONS_MSG = 'No solutions'
+INF_SOLUTIONS_MSG = 'Infinitely many solutions'

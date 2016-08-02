@@ -26,6 +26,9 @@ class Vector(object):
     def __iter__(self):
         return iter(self.coordinates)
 
+    def __getitem__(self, i):
+        return self.coordinates[i]
+
     def magnitude(self):
         try:
             if not self.coordinates:
