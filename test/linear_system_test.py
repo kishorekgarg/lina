@@ -2,6 +2,7 @@ import unittest
 from lina.linear_system import LinearSystem
 from lina.plane import Plane
 from lina.vector import Vector
+from decimal import Decimal
 
 
 class LinearSystemTestCase(unittest.TestCase):
@@ -101,6 +102,41 @@ class LinearSystemTestCase(unittest.TestCase):
                   and t[1] == Plane(normal_vector=Vector([0.0, 1.0, 1.0]), constant_term='1')
                   and t[2] == Plane(normal_vector=Vector([0.0, 0.0, -9.0]), constant_term='-2'))
         self.assertTrue(result, 'test_compute_triangular_form : test case 4 failed')
+
+    def test_compute_rref(self):
+        p1 = Plane(normal_vector=Vector([1.0, 1.0, 1.0]), constant_term='1')
+        p2 = Plane(normal_vector=Vector([0.0, 1.0, 1.0]), constant_term='2')
+        s = LinearSystem([p1, p2])
+        r = s.compute_rref()
+        result = (r[0] == Plane(normal_vector=Vector([1.0, 0.0, 0.0]), constant_term='-1') and r[1] == p2)
+        self.assertTrue(result, 'test_compute_rref : test case 1 failed')
+
+        p1 = Plane(normal_vector=Vector([1.0, 1.0, 1.0]), constant_term='1')
+        p2 = Plane(normal_vector=Vector([1.0, 1.0, 1.0]), constant_term='2')
+        s = LinearSystem([p1, p2])
+        r = s.compute_rref()
+        result = (r[0] == p1 and r[1] == Plane(constant_term='1'))
+        self.assertTrue(result, 'test_compute_rref : test case 2 failed')
+
+        p1 = Plane(normal_vector=Vector([1.0, 1.0, 1.0]), constant_term='1')
+        p2 = Plane(normal_vector=Vector([0.0, 1.0, 0.0]), constant_term='2')
+        p3 = Plane(normal_vector=Vector([1.0, 1.0, -1.0]), constant_term='3')
+        p4 = Plane(normal_vector=Vector([1.0, 0.0, -2.0]), constant_term='2')
+        s = LinearSystem([p1, p2, p3, p4])
+        r = s.compute_rref()
+        result = (r[0] == Plane(normal_vector=Vector([1.0, 0.0, 0.0]), constant_term='0') and r[1] == p2
+                  and r[2] == Plane(normal_vector=Vector([0.0, 0.0, -2.0]), constant_term='2') and r[3] == Plane())
+        self.assertTrue(result, 'test_compute_rref : test case 3 failed')
+
+        p1 = Plane(normal_vector=Vector([0.0, 1.0, 1.0]), constant_term='1')
+        p2 = Plane(normal_vector=Vector([1.0, -1.0, 1.0]), constant_term='2')
+        p3 = Plane(normal_vector=Vector([1.0, 2.0, -5.0]), constant_term='3')
+        s = LinearSystem([p1, p2, p3])
+        r = s.compute_rref()
+        result = (r[0] == Plane(normal_vector=Vector([1.0, 0.0, 0.0]), constant_term=Decimal('23') / Decimal('9'))
+                  and r[1] == Plane(normal_vector=Vector([0.0, 1.0, 0.0]), constant_term=Decimal('7') / Decimal('9'))
+                  and r[2] == Plane(normal_vector=Vector([0.0, 0.0, 1.0]), constant_term=Decimal('2') / Decimal('9')))
+        self.assertTrue(result, 'test_compute_rref : test case 4 failed')
 
 if __name__ == '__main__':
     unittest.main()

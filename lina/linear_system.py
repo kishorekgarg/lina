@@ -2,6 +2,7 @@ import lina.message as message
 from lina.line import Line, MyFloat
 from lina.plane import Plane
 from copy import deepcopy
+from lina.vector import Vector
 
 
 class LinearSystem(object):
@@ -94,6 +95,65 @@ class LinearSystem(object):
             y = nv[col]
             z = -y/x
             self.add_multiple_times_row_to_row(z,row, i)
+
+    def compute_rref(self):
+        tf = self.compute_triangular_form()
+        num_equations = len(tf)
+        pivots = tf.indices_of_first_nonzero_terms_in_each_row()
+
+        for i in range(num_equations)[::-1]:
+            j = pivots[i]
+            if j < 0:
+                continue
+            tf.scale_row_coefficient_to_one(i, j)
+            tf.clear_coefficient_above(i, j)
+        return tf
+
+    def scale_row_coefficient_to_one(self, row, col):
+        normal_vector = self[row].normal_vector
+        c = 1.0/normal_vector[col]
+        self.multiply_coefficient_and_row(c, row)
+
+    def clear_coefficient_above(self, row, col):
+        for i in range(row)[::-1]:
+            nv = self[i].normal_vector
+            c = -(nv[col])
+            self.add_multiple_times_row_to_row(c, row, i)
+
+    def compute_solution(self):
+        try:
+            return self.gaussian_elimination_and_extraction()
+        except Exception as e:
+            if str(e) == message.NO_SOLUTIONS_MSG or str(e) == message.INF_SOLUTIONS_MSG:
+                return str(e)
+            else:
+                raise e
+
+    def gaussian_elimination_and_extraction(self):
+        rref = self.compute_rref()
+
+        rref.check_exceptions()
+        num_variables = rref.dimension
+        solution_coordinates = [rref.planes[i].constant_term for i in range(num_variables)]
+        return Vector(solution_coordinates)
+
+    def check_exceptions(self):
+        for plane in self.planes:
+            try:
+                plane.first_nonzero_index(plane.normal_vector)
+            except Exception as e:
+                if str(e) == message.NO_NONZERO_ELEMENTS_FOUND:
+                    constant_term = MyFloat(plane.constant_term)
+                    if not constant_term.is_near_zero():
+                        raise Exception(message.NO_SOLUTIONS_MSG)
+                else:
+                    raise e
+        pivots = self.indices_of_first_nonzero_terms_in_each_row()
+        num_pivots = sum([1 if index >= 0 else 0 for index in pivots])
+        num_variables = self.dimension
+
+        if num_pivots < num_variables:
+            raise Exception(message.INF_SOLUTIONS_MSG)
 
     def __len__(self):
         return len(self.planes)
