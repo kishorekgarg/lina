@@ -23,8 +23,8 @@
       <file leaf-file-name="vector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/vector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="107">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="plane.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/plane.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -47,8 +47,8 @@
       <file leaf-file-name="linear_system.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/linear_system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="51">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -59,8 +59,8 @@
       <file leaf-file-name="linear_system_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/linear_system_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
       <file leaf-file-name="line.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -117,15 +117,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lina/plane.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/test/line_test.py" />
         <option value="$PROJECT_DIR$/test/vector_test.py" />
         <option value="$PROJECT_DIR$/test/plane_test.py" />
         <option value="$PROJECT_DIR$/lina/message.py" />
-        <option value="$PROJECT_DIR$/lina/line.py" />
         <option value="$PROJECT_DIR$/lina/vector.py" />
         <option value="$PROJECT_DIR$/lina/linear_system.py" />
+        <option value="$PROJECT_DIR$/lina/plane.py" />
+        <option value="$PROJECT_DIR$/lina/line.py" />
         <option value="$PROJECT_DIR$/test/linear_system_test.py" />
       </list>
     </option>
@@ -213,51 +213,7 @@
       <recent name="G:\PythonLib\lina\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest LinearSystemTestCase.test_linear_system">
-    <configuration default="false" name="Unittest PlaneTestCase.test_is_parallel1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lina" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/plane_test.py" />
-      <option name="CLASS_NAME" value="PlaneTestCase" />
-      <option name="METHOD_NAME" value="test_is_parallel1" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest PlaneTestCase.test_is_parallel3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lina" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/plane_test.py" />
-      <option name="CLASS_NAME" value="PlaneTestCase" />
-      <option name="METHOD_NAME" value="test_is_parallel3" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form">
     <configuration default="false" name="Unittests in plane_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,6 +266,50 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
       <option name="CLASS_NAME" value="LinearSystemTestCase" />
       <option name="METHOD_NAME" value="test_linear_system" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest LinearSystemTestCase.test_linear_system2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lina" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
+      <option name="CLASS_NAME" value="LinearSystemTestCase" />
+      <option name="METHOD_NAME" value="test_linear_system2" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest LinearSystemTestCase.test_compute_triangular_form" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lina" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
+      <option name="CLASS_NAME" value="LinearSystemTestCase" />
+      <option name="METHOD_NAME" value="test_compute_triangular_form" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -454,19 +454,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest PlaneTestCase.test_is_parallel1" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest PlaneTestCase.test_is_parallel3" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in plane_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.linear_system" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in plane_test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.linear_system" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system2" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
-        <item index="1" class="java.lang.String" itemvalue="Python.linear_system" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in plane_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest PlaneTestCase.test_is_parallel3" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest PlaneTestCase.test_is_parallel1" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system2" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
+        <item index="3" class="java.lang.String" itemvalue="Python.linear_system" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in plane_test" />
       </list>
     </recent_temporary>
   </component>
@@ -487,39 +487,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 03m 53s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 01m 36s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 05m 28s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 02m 59s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 05m 43s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 04m 33s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 06m 39s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 05m 50s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 07m 54s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 08m 58s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 09m 31s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 10m 02s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittest_LinearSystemTestCase_test_linear_system - 2016.08.02 at 23h 09m 31s.xml">
       <configuration name="Unittest LinearSystemTestCase.test_linear_system" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_VectorTestCase - 2016.07.28 at 22h 04m 37s.xml">
-      <configuration name="Unittests in VectorTestCase" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system2 - 2016.08.03 at 22h 11m 12s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_linear_system2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_VectorTestCase - 2016.07.28 at 22h 07m 23s.xml">
-      <configuration name="Unittests in VectorTestCase" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_VectorTestCase - 2016.07.28 at 22h 10m 32s.xml">
-      <configuration name="Unittests in VectorTestCase" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_plane_test - 2016.07.28 at 22h 16m 40s.xml">
-      <configuration name="Unittests in plane_test" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system2 - 2016.08.03 at 22h 15m 55s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_linear_system2" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -557,11 +557,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/test/linear_system_test.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="21" />
+          <line>81</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/plane.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/vector.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/vector.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -837,36 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lina/line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lina/vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lina/linear_system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/line_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -877,20 +862,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lina/plane.py">
+    <entry file="file://$PROJECT_DIR$/lina/vector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lina/plane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lina/line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lina/linear_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/linear_system_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
