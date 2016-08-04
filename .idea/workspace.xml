@@ -23,8 +23,8 @@
       <file leaf-file-name="vector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/vector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="66" column="14" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="14" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="plane.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/plane.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -44,11 +44,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="message.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lina/message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="linear_system.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/linear_system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+            <state relative-caret-position="289">
+              <caret line="46" column="87" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -59,10 +69,22 @@
       <file leaf-file-name="linear_system_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/linear_system_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="125" column="28" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
+            <state relative-caret-position="323">
+              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hyperplane.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lina/hyperplane.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +93,8 @@
       <file leaf-file-name="line.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lina/line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -99,12 +121,14 @@
         <option value="$PROJECT_DIR$/test/line_test.py" />
         <option value="$PROJECT_DIR$/test/vector_test.py" />
         <option value="$PROJECT_DIR$/test/plane_test.py" />
-        <option value="$PROJECT_DIR$/lina/message.py" />
-        <option value="$PROJECT_DIR$/lina/vector.py" />
         <option value="$PROJECT_DIR$/lina/plane.py" />
         <option value="$PROJECT_DIR$/lina/line.py" />
-        <option value="$PROJECT_DIR$/test/linear_system_test.py" />
+        <option value="$PROJECT_DIR$/lina/parametrization.py" />
+        <option value="$PROJECT_DIR$/lina/vector.py" />
+        <option value="$PROJECT_DIR$/lina/message.py" />
+        <option value="$PROJECT_DIR$/lina/hyperplane.py" />
         <option value="$PROJECT_DIR$/lina/linear_system.py" />
+        <option value="$PROJECT_DIR$/test/linear_system_test.py" />
       </list>
     </option>
   </component>
@@ -188,71 +212,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\PythonLib\lina\lina" />
       <recent name="G:\PythonLib\lina\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest LinearSystemTestCase.test_compute_rref">
-    <configuration default="false" name="linear_system" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lina" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lina" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lina/linear_system.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest LinearSystemTestCase.test_linear_system" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lina" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
-      <option name="CLASS_NAME" value="LinearSystemTestCase" />
-      <option name="METHOD_NAME" value="test_linear_system" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest LinearSystemTestCase.test_linear_system2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lina" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
-      <option name="CLASS_NAME" value="LinearSystemTestCase" />
-      <option name="METHOD_NAME" value="test_linear_system2" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittest LinearSystemTestCase.test_hyper_plane">
     <configuration default="false" name="Unittest LinearSystemTestCase.test_compute_triangular_form" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,6 +252,72 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
       <option name="CLASS_NAME" value="LinearSystemTestCase" />
       <option name="METHOD_NAME" value="test_compute_rref" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest LinearSystemTestCase.test_compute_solution" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lina" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
+      <option name="CLASS_NAME" value="LinearSystemTestCase" />
+      <option name="METHOD_NAME" value="test_compute_solution" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest LinearSystemTestCase.test_compute_parametrized_solution" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lina" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
+      <option name="CLASS_NAME" value="LinearSystemTestCase" />
+      <option name="METHOD_NAME" value="test_compute_parametrized_solution" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest LinearSystemTestCase.test_hyper_plane" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lina" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linear_system_test.py" />
+      <option name="CLASS_NAME" value="LinearSystemTestCase" />
+      <option name="METHOD_NAME" value="test_hyper_plane" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -432,19 +462,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.linear_system" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system2" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_rref" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_rref" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_solution" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_parametrized_solution" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_hyper_plane" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_rref" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system2" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_linear_system" />
-        <item index="4" class="java.lang.String" itemvalue="Python.linear_system" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_hyper_plane" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_parametrized_solution" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_solution" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_rref" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest LinearSystemTestCase.test_compute_triangular_form" />
       </list>
     </recent_temporary>
   </component>
@@ -465,50 +495,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_rref - 2016.08.03 at 23h 42m 03s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_rref" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_compute_parametrized_solution - 2016.08.05 at 00h 58m 14s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_compute_parametrized_solution" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 01m 36s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 00h 58m 27s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 02m 59s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 00h 59m 44s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 04m 33s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 07m 28s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 05m 50s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 08m 14s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 08m 58s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 08m 49s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 09m 31s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 09m 53s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_compute_triangular_form - 2016.08.03 at 23h 10m 02s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_compute_triangular_form" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 10m 34s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system2 - 2016.08.03 at 22h 11m 12s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system2" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 12m 13s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_LinearSystemTestCase_test_linear_system2 - 2016.08.03 at 22h 15m 55s.xml">
-      <configuration name="Unittest LinearSystemTestCase.test_linear_system2" configurationId="tests" />
+    <history-entry file="Unittest_LinearSystemTestCase_test_hyper_plane - 2016.08.05 at 01h 15m 11s.xml">
+      <configuration name="Unittest LinearSystemTestCase.test_hyper_plane" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34188035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34188035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -535,7 +565,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/test/linear_system_test.py</url>
-          <line>82</line>
+          <line>81</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -545,16 +575,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/lina/vector.py</url>
-          <line>108</line>
+          <line>111</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/lina/vector.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/lina/linear_system.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/linear_system.py</url>
+          <line>246</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/linear_system.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lina/linear_system.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -602,7 +647,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -664,7 +709,7 @@
         <state relative-caret-position="2108">
           <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,7 +757,7 @@
         <state relative-caret-position="1870">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,7 +787,7 @@
         <state relative-caret-position="1615">
           <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,7 +815,7 @@
         <state relative-caret-position="1377">
           <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -800,14 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/vector_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -822,30 +859,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lina/vector.py">
+    <entry file="file://$PROJECT_DIR$/test/line_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lina/plane.py">
+    <entry file="file://$PROJECT_DIR$/lina/parametrization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lina/line.py">
+    <entry file="file://$PROJECT_DIR$/lina/hyperplane.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -854,36 +889,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lina/message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="511" column="0" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lina/plane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lina/line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="309" column="4" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lina/vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lina/linear_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        <state relative-caret-position="289">
+          <caret line="46" column="87" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/line_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/linear_system_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="125" column="28" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
+        <state relative-caret-position="323">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

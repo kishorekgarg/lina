@@ -23,6 +23,9 @@ class Vector(object):
     def __eq__(self, v):
         return self.coordinates == v.coordinates
 
+    def __ne__(self, v):
+        return not self.__eq__(v)
+
     def __iter__(self):
         return iter(self.coordinates)
 

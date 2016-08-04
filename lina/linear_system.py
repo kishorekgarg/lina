@@ -3,6 +3,13 @@ from lina.line import Line, MyFloat
 from lina.plane import Plane
 from copy import deepcopy
 from lina.vector import Vector
+from lina.hyperplane import HyperPlane
+
+
+def _get_new_plane(coefficient, plane):
+    new_normal_vector = plane.normal_vector.scalar(coefficient)
+    return HyperPlane(normal_vector=new_normal_vector,
+                      constant_term=coefficient * plane.constant_term)
 
 
 class LinearSystem(object):
@@ -22,24 +29,35 @@ class LinearSystem(object):
         self[row1], self[row2] = self[row2], self[row1]
 
     def multiply_coefficient_and_row(self, coefficient, row):
-        normal_vector = self[row].normal_vector
-        constant_term = self[row].constant_term
+        if isinstance(self.planes[0], HyperPlane):
+            self[row] = _get_new_plane(coefficient, self[row])
+        else:
+            normal_vector = self[row].normal_vector
+            constant_term = self[row].constant_term
 
-        new_normal_vector = normal_vector.scalar(coefficient)
-        new_constant_term = constant_term * coefficient
+            new_normal_vector = normal_vector.scalar(coefficient)
+            new_constant_term = constant_term * coefficient
 
-        self[row] = Plane(new_normal_vector, new_constant_term)
+            self[row] = Plane(new_normal_vector, new_constant_term)
 
     def add_multiple_times_row_to_row(self, coefficient, row_to_add, row_to_be_added_to):
-        normal_vector1 = self[row_to_add].normal_vector
-        normal_vector2 = self[row_to_be_added_to].normal_vector
-        constant_term1 = self[row_to_add].constant_term
-        constant_term2 = self[row_to_be_added_to].constant_term
+        if isinstance(self.planes[0], HyperPlane):
+            recipient_plane = self[row_to_be_added_to]
+            new_plane = _get_new_plane(coefficient, self[row_to_add])
+            new_normal_vector = recipient_plane.normal_vector + new_plane.normal_vector
+            constant_term = new_plane.constant_term + recipient_plane.constant_term
+            self[row_to_be_added_to] = HyperPlane(normal_vector=new_normal_vector,
+                                                  constant_term=constant_term)
+        else:
+            normal_vector1 = self[row_to_add].normal_vector
+            normal_vector2 = self[row_to_be_added_to].normal_vector
+            constant_term1 = self[row_to_add].constant_term
+            constant_term2 = self[row_to_be_added_to].constant_term
 
-        new_normal_vector = normal_vector1.scalar(coefficient) + normal_vector2
-        new_constant_term = constant_term1 * coefficient + constant_term2
+            new_normal_vector = normal_vector1.scalar(coefficient) + normal_vector2
+            new_constant_term = constant_term1 * coefficient + constant_term2
 
-        self[row_to_be_added_to] = Plane(new_normal_vector, new_constant_term)
+            self[row_to_be_added_to] = Plane(new_normal_vector, new_constant_term)
 
     def indices_of_first_nonzero_terms_in_each_row(self):
         num_equations = len(self)
@@ -140,7 +158,7 @@ class LinearSystem(object):
     def check_exceptions(self):
         for plane in self.planes:
             try:
-                plane.first_nonzero_index(plane.normal_vector)
+                Line.first_nonzero_index(plane.normal_vector)
             except Exception as e:
                 if str(e) == message.NO_NONZERO_ELEMENTS_FOUND:
                     constant_term = MyFloat(plane.constant_term)
@@ -154,6 +172,69 @@ class LinearSystem(object):
 
         if num_pivots < num_variables:
             raise Exception(message.INF_SOLUTIONS_MSG)
+
+    def compute_parametrized_solution(self):
+        try:
+            return self.gaussian_elimination_and_parametrized_solution()
+        except Exception as e:
+            if str(e) == message.NO_SOLUTIONS_MSG:
+                return str(e)
+            else:
+                raise e
+
+    def gaussian_elimination_and_parametrized_solution(self):
+        rref = self.compute_rref()
+
+        rref.check_exceptions_for_parametrization()
+        direction_vectors = self.get_direction_vectors_for_parametrization()
+        basepoint = self.get_basepoint_for_parametrization()
+        return Parametrization(basepoint, direction_vectors)
+
+    def check_exceptions_for_parametrization(self):
+        for plane in self.planes:
+            try:
+                Line.first_nonzero_index(plane.normal_vector)
+            except Exception as e:
+                if str(e) == message.NO_NONZERO_ELEMENTS_FOUND:
+                    constant_term = MyFloat(plane.constant_term)
+                    if not constant_term.is_near_zero():
+                        raise Exception(message.NO_SOLUTIONS_MSG)
+                else:
+                    raise e
+
+    def get_direction_vectors_for_parametrization(self):
+        num_variables = self.dimension
+        pivots = self.indices_of_first_nonzero_terms_in_each_row()
+        free_variable_indices = set(range(num_variables)) - set(pivots)
+
+        direction_vectors = []
+
+        for free_var in free_variable_indices:
+            vector_coords = [0] * num_variables
+            vector_coords[free_var] = 1
+            for index, plane in enumerate(self.planes):
+                pivot_var = pivots[index]
+                if pivot_var < 0:
+                    break
+                vector_coords[pivot_var] = -plane.normal_vector[free_var]
+
+            direction_vectors.append(Vector(vector_coords))
+
+        return direction_vectors
+
+    def get_basepoint_for_parametrization(self):
+        num_variables = self.dimension
+        pivots = self.indices_of_first_nonzero_terms_in_each_row()
+
+        basepoint_coords = [0] * num_variables
+
+        for index, plane in enumerate(self.planes):
+            pivot_var = pivots[index]
+            if pivot_var < 0:
+                break
+            basepoint_coords[pivot_var] = plane.constant_term
+
+        return Vector(basepoint_coords)
 
     def __len__(self):
         return len(self.planes)
@@ -174,3 +255,38 @@ class LinearSystem(object):
         temp = ['Equation {}: {}'.format(i+1,p) for i,p in enumerate(self.planes)]
         ret += '\n'.join(temp)
         return ret
+
+
+class Parametrization(object):
+    def __init__(self, basepoint, direction_vectors):
+        self.basepoint = basepoint
+        self.direction_vectors = direction_vectors
+        self.dimension = self.basepoint.dimension
+
+        try:
+            for vector in direction_vectors:
+                assert vector.dimension == self.dimension
+        except AssertionError:
+            raise Exception(message.BASE_POINT_AND_DIRECTION_VECTOR_DIMENSION_NOT_SAME)
+
+    def __str__(self):
+        output = ''
+        for coord in range(self.dimension):
+            output += 'x_{} = {} '.format(coord + 1,
+                                          round(self.basepoint[coord], 3))
+            for free_var, vector in enumerate(self.direction_vectors):
+                output += '+ {} t_{}'.format(round(vector[coord], 3),
+                                             free_var + 1)
+            output += '\n'
+        return output
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            for v1, v2 in zip(self.direction_vectors, other.direction_vectors):
+                if v1 != v2:
+                    return False
+            if not (self.basepoint == other.basepoint):
+                return False
+            return True
+        else:
+            return False
